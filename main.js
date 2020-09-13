@@ -106,3 +106,6 @@ app.route('/register')
     req.logOut();
     res.redirect('/');
   });
+
+  app.route('/loginArea')
+    .get((req, res)=> {res.render('loginArea')})
